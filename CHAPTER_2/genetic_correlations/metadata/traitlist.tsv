@@ -1,0 +1,149 @@
+CATEGORY	TRAIT	COLOR
+BP	Diastolic Blood Pressure (Automated Reading)	#1f77b4
+BP	Diastolic Blood Pressure (Manual Reading)	#1f77b4
+BP	Systolic blood pressure (automated reading)	#1f77b4
+BP	Systolic blood pressure (manual reading)	#1f77b4
+Comorbidity	Body Fat Percentage	#ff7f0e
+Comorbidity	High cholesterol (self reported)	#ff7f0e
+Comorbidity	Waist circumference	#ff7f0e
+Comorbidity	Weight	#ff7f0e
+Comorbidity	Whole body fat mass	#ff7f0e
+Disease	Long covid	#ff7f0e
+contractility	LVEF	#2ca02c
+contractility	RVEF	#2ca02c
+contractility	LV circumferential strain	#2ca02c
+contractility	LV longitudinal strain	#2ca02c
+contractility	LV radial strain	#2ca02c
+Disease	Coronary Atherosclerosis	#d62728
+Disease	Angina Pectoris	#d62728
+Disease	Acute Myocardial Infarction	#d62728
+Disease	Chronic Ischaemic Heart Disease	#d62728
+Disease	Atrial Fibrillation and Flutter	#d62728
+Disease	HCM	#d62728
+Disease	DCM	#d62728
+Disease	Pulmonary hypertension	#d62728
+Disease	Ischaemic heart disease wide definition	#d62728
+Disease	Major coronary heart disease event	#d62728
+Disease	Myocardial infarction	#d62728
+Disease	DCM	#d62728
+Disease	Heart failure	#d62728
+Heart rate	ECG Heart Rate	#9467bd
+Heart rate	ECG Load	#9467bd
+Heart rate	Maximum heart rate during fitness test	#9467bd
+Heart rate	Maximum workload during fitness test	#9467bd
+Heart rate	Pulse rate (automated reading)	#9467bd
+LV	LV concentricity m	#8c564b
+LV	LVESV indexed	#8c564b
+LV	LVSV indexed	#8c564b
+LV	max LV indexed	#8c564b
+LV	max LV	#8c564b
+LV	min LV indexed	#8c564b
+LV	LVSV indexed (2)	#8c564b
+LVWT	LVES IS WT	#e377c2
+LVWT	LVES I WT	#e377c2
+LVWT	LVES IF WT	#e377c2
+LVWT	LVES AL WT	#e377c2
+LVWT	LVES A WT	#e377c2
+LVWT	LVES AS WT	#e377c2
+LVWT	LVED IS WT	#e377c2
+LVWT	LVED I WT	#e377c2
+LVWT	LVED IF WT	#e377c2
+LVWT	LVED AL WT	#e377c2
+LVWT	LVED A WT	#e377c2
+LVWT	LVED AS WT	#e377c2
+LVWT	mean LV wall thickness m	#e377c2
+MFD	MFD1	#7f7f7f
+MFD	MFD2	#7f7f7f
+MFD	MFD3	#7f7f7f
+MFD	MFD4	#7f7f7f
+MFD	MFD5	#7f7f7f
+MFD	MFD6	#7f7f7f
+MFD	MFD7	#7f7f7f
+MFD	MFD8	#7f7f7f
+MFD	MFD9	#7f7f7f
+NO	RVESV indexed	#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO	LVSV indexed	#bcbd22
+NO		#bcbd22
+NO	max LV	#bcbd22
+NO	max LV indexed	#bcbd22
+NO		#bcbd22
+NO	min LV indexed	#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO	LVEF	#bcbd22
+NO	RVEDV/LVEDV ratio	#bcbd22
+NO	RVEF/LVEF ratio	#bcbd22
+NO	RVEF	#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO	max AA diameter indexed	#bcbd22
+NO		#bcbd22
+NO	PA AO diastole	#bcbd22
+NO	PA AO	#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO	RAFAC	#bcbd22
+NO		#bcbd22
+NO	RAMAX	#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO	RAMIN	#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO	RVEDV indexed	#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO		#bcbd22
+NO	RVSV indexed	#bcbd22
+NO		#bcbd22
+OFT	max AA diameter indexed	#17becf
+OFT	PA AO	#17becf
+OFT	PA AO diastole	#17becf
+OFT	Short axis cm PA diastole indexed	#17becf
+OFT	Short axis cm PA indexed	#17becf
+OFT	Short axis cm root indexed	#17becf
+RA	RAFAC	#9edae5
+RA	RAMAX	#9edae5
+RA	RAMIN	#9edae5
+RV	RVEDV indexed	#c5b0d5
+RV	RVESV indexed	#c5b0d5
+RV	RVSV indexed	#c5b0d5
+RV_LV_ratio	RVEDV/LVEDV ratio	#ff9896
+RV_LV_ratio	RVEF/LVEF ratio	#ff9896
+RV_LV_ratio	RVESV/LVESV ratio	#ff9896
+RV_LV_ratio	RVSV/LVSV ratio	#ff9896
+LVWT	LV mass	#e377c2
+LV	LVEDV indexed	#8c564b
