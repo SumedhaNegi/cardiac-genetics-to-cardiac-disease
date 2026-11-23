@@ -1,0 +1,27 @@
+project:
+  name: transcription-factor-analysis
+  description: Cardiac TF binding footprints and cardiac-trait SNP heritability
+
+# These column names reflect the SNP metadata layout described in the archived
+# analysis notes. Confirm against the exact snp.info file before running.
+snp_columns:
+  chromosome: "Chromosome"
+  rsid: "rsid"
+  position: "PhysPos"
+
+# Set the correct reference assembly explicitly in the command line.
+# The supplied archive contains historical annotations from multiple sources;
+# do not assume they all share one assembly or species.
+genome_build: "REPLACE_WITH_CONFIRMED_BUILD"
+
+transcription_factors:
+  - HOPX
+  - GATA4
+  - MEF2A
+  - NKX2_5
+  - TBX5
+  - SRF
+
+sbayesrc:
+  result_pattern: "AnnoPerSnpHsqEnrichment"
+  enrichment_null: 1.0
