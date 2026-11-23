@@ -1,3 +1,18 @@
+# =============================================================================
+# EXAMINER GUIDE
+# Script: plot_genetic_correlations.R
+# Purpose: Supports summary-statistic preparation, LDSC genetic-correlation analysis or visualisation; see chapter workflow documentation.
+# Inputs/outputs: Consult the script body and the chapter README for expected
+# files, object names and outputs. Institutional paths and external references
+# may require the original UQ environment.
+# Curation: Existing analytical code is retained; this header adds navigation
+# context only. No execution or testing was performed during curation.
+# =============================================================================
+
+# CODE MAP
+# Reads LDSC pairwise results and trait metadata, validates pair consistency, builds a symmetric rg/q matrix, plots cross-category correlations and performs Ward.D2 clustering.
+#
+
 #!/usr/bin/env Rscript
 
 # -----------------------------------------------------------------------------

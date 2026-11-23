@@ -1,16 +1,12 @@
+# Local analysis outputs and temporary files
 .Rhistory
 .RData
 .Rproj.user/
-.DS_Store
+.Ruserdata
+*.Rout
 *.log
 *.out
 *.err
-*.sumstats
-*.sumstats.gz
-*.bim
-*.bed
-*.fam
-*.ldscore.gz
-*.l2.ldscore.gz
-*.annot.gz
-CHAPTER_2/genetic_correlations/figures/generated/
+.DS_Store
+__MACOSX/
+*.tmp

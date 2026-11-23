@@ -1,3 +1,18 @@
+# =============================================================================
+# EXAMINER GUIDE
+# Script: run_ldsc_genetic_correlations.slurm.sh
+# Purpose: Supports summary-statistic preparation, LDSC genetic-correlation analysis or visualisation; see chapter workflow documentation.
+# Inputs/outputs: Consult the script body and the chapter README for expected
+# files, object names and outputs. Institutional paths and external references
+# may require the original UQ environment.
+# Curation: Existing analytical code is retained; this header adds navigation
+# context only. No execution or testing was performed during curation.
+# =============================================================================
+
+# CODE MAP
+# SLURM job wrapper for pairwise LDSC genetic correlations; configures Python/LDSC environment, trait pairs and output locations.
+#
+
 #!/usr/bin/env bash
 #SBATCH --job-name=ldsc_rg
 #SBATCH --nodes=1

@@ -1,44 +1,52 @@
-# Cardiac Genetics to Cardiac Disease
+# Cardiac Genetics to Cardiac Disease — Thesis Methods Repository
 
-Examiner-facing analysis record accompanying the thesis *Cardiac Genetics to Cardiac Disease: Statistical Genomics Analyses and Functional Characterisation of HOPX and its variants*.
+This repository brings together the supplied analysis scripts and supporting material for the thesis
+**Cardiac Genetics to Cardiac Disease: Statistical Genomics Analyses and Functional Characterisation of HOPX and its variants**.
 
-## Scope of this repository version
+## Purpose for examiners
 
-This initial GitHub-ready build documents the Chapter 2 **genetic-correlation analysis**. It is not yet the complete thesis code repository. The folder records the analysis sequence, the scripts identified in the supplied archive, selected cleaned scripts, trait annotations, archived results and original figure outputs.
+This is a readable record of the analytical methods and the development of the thesis analyses. It is **not claimed to be a fully reproducible software pipeline**. Some historical scripts depend on restricted datasets, UQ HPC paths/modules, interactive sessions, manually prepared files or objects created in earlier analysis steps.
 
-The purpose is to make the work understandable to examiners. It is not intended to recreate the original UQ computing environment or to redistribute GWAS summary statistics, institutional data, or third-party reference panels.
+Each curated code/job file has an examiner guide and a file-specific code map at the top, with inline comments retained and expanded where the method is clear. Several identifiable errors and missing setup steps have been repaired in the curated copies. Original source collections are retained unchanged under `_source_archive/` so that edits do not erase provenance.
 
 ## Where to start
 
-1. Read [`CHAPTER_2/genetic_correlations/docs/analysis_workflow.md`](CHAPTER_2/genetic_correlations/docs/analysis_workflow.md) for the sequence of analysis steps.
-2. Read [`CHAPTER_2/genetic_correlations/docs/script_selection_and_review.md`](CHAPTER_2/genetic_correlations/docs/script_selection_and_review.md) for the selection of script versions and known caveats.
-3. See [`CHAPTER_2/genetic_correlations/docs/methods_examiner_summary.md`](CHAPTER_2/genetic_correlations/docs/methods_examiner_summary.md) for an examiner-facing description of the method.
-4. The cleaned plotting/clustering script is [`CHAPTER_2/genetic_correlations/scripts/plot_genetic_correlations.R`](CHAPTER_2/genetic_correlations/scripts/plot_genetic_correlations.R).
+1. [`docs/THESIS_METHODS_OVERVIEW.md`](docs/THESIS_METHODS_OVERVIEW.md) — how the code is grouped by thesis question.
+2. [`docs/SCRIPT_INVENTORY.md`](docs/SCRIPT_INVENTORY.md) — complete inventory and locations.
+3. [`docs/SCRIPT_AUDIT.md`](docs/SCRIPT_AUDIT.md) — known source issues and interpretation cautions.
+4. Read the README in each chapter folder for workflow-specific context.
 
-## Repository layout
+## Thesis-oriented structure
 
 ```text
-CHAPTER_2/genetic_correlations/
-├── docs/       workflow, methods and script audit
-├── figures/    archived thesis-analysis figure outputs
-├── metadata/   trait annotations and source-file mapping
-├── results/    archived LDSC result table and significant-count output
-└── scripts/    cleaned, annotated SLURM and R scripts
+CHAPTER_2/
+  genetic_correlations/                  # LDSC, summary-statistic preparation and correlation figures
+  transcription_factor_analysis/         # DamID/TF binding, gene sets, SNP annotations, SBayesRC and enrichment
+  single_cell_and_regulatory_analysis/   # scDRS, TRIAGE, developmental single-cell and gene-ID mapping
+CHAPTER_3/
+  hopx_functional_characterisation/
+    cardioexcyte/                         # CardioExcyte data processing and thesis EFP figures
+    efpa/                                 # EFPA waveform plotting
+    flow_cytometry/                       # FlowCore control-based gating and BFP analysis
+    qPCR/                                 # qPCR workflow
+    gene_expression_correlation/          # HOPX-related expression/correlation scripts
+CHAPTER_4/
+  rare_variant_interpretation/            # AlphaMissense/ClinVar visualisation
+docs/
+_source_archive/                          # unmodified supplied source collections
 ```
 
-## Important interpretation and provenance notes
+The chapter mapping is a practical organisation of the supplied scripts, not a claim that every script corresponds one-to-one to a thesis figure.
 
-- Bivariate LDSC estimates genome-wide genetic correlation; it does not identify causal variants or establish causal relationships.
-- The thesis reports 1,485 pairwise correlations among quantitative cardiac traits and describes Benjamini–Hochberg FDR correction across 10,877 tested correlations in the quantitative-trait/disease analysis captions.
-- The supplied `rg_results_original.tsv` contains repeated records and some repeated trait pairs with conflicting estimates. The plotting script deliberately stops rather than silently selecting or averaging conflicting results. These records need to be reconciled against the final LDSC output/logs before using this archived table to regenerate final figures.
-- Ward.D2 clustering is included in the plotting workflow, using the thesis-reported dissimilarity `d = 1 - rg`. The original Ward.D2 implementation was found in the long `ldsc_corrplot.R` plotting script in the reviewed repository, not in the small standalone plotting scripts in the genetic-correlation ZIP.
-- The archived reference files (`w_hm3.snplist`, European LD-score reference panels) are not redistributed here. They are third-party/reference resources and should be obtained from their original source or institutional environment.
-- The SLURM scripts are sanitised templates. Replace environment variables with paths available in the computing environment in which the analysis is run. They are not represented as byte-for-byte copies of the historical jobs.
+## Important methodological cautions
 
-## Software
+- Some historical files contain mixed R, Python, Bash, SLURM/PBS commands, terminal prompts or copied console output. The scDRS notebook has been split into language-specific components where the intent was clear; its full source remains archived. Where a missing scientific step cannot be inferred safely, the source is retained and the limitation is documented rather than inventing an analysis.
+- `Triage_discordance_dubois.R` is the canonical reconstructed workflow. `Triage_discordance_dubois_1.R` is a short provenance pointer; the complete duplicate draft remains in `_source_archive/`.
+- Human and mouse data occur in the supplied workflows. Do not assume gene identifiers, gene symbols, genome assemblies or coordinates are directly interchangeable. Where cross-species interpretation is required, document the orthology resource/version and retain species-specific identifiers. No comprehensive human–mouse harmonisation is asserted by this repository.
+- The CardioExcyte thesis figure script documents its own preprocessing and statistical choices. In particular, it averages retained wells within variant and sweep and then summarises across sweeps; the ANOVA is applied to the sweep-level values. Examiners should interpret the experimental unit and repeated-measures structure in light of the original experimental design.
+- Historical absolute paths (for example `/QRISdata/`, `/scratch/` and user home directories) are preserved where present in originals. They identify the original computing context and will not resolve on other systems.
+- No raw individual-level data, restricted GWAS summary statistics or institutional reference panels should be added to a public repository without checking data-use permissions.
 
-The archived SLURM scripts load the UQ LDSC module `ldsc/1.0.1--pyhdfd78af_2/module`. The plotting workflow uses R and the `corrplot` package. Record the exact R and package versions used for any future execution; the current cleaned script has not been run against the complete original HPC environment.
+## Curation statement
 
-## Data availability and responsible sharing
-
-Do not commit individual-level, restricted, unpublished, or collaborator-controlled data. Before making this repository public, confirm that the summary-statistic-derived result table, mapping file, and figure outputs can be shared under the relevant data-use and institutional agreements. No raw GWAS summary-statistic files or reference panels are included in this repository build.
+The supplied code has been reorganised, annotated and reviewed for visible errors. Substantive repairs/reconstructions were made to the CardioExcyte import/reshape workflow, genetic-correlation plotting fragment, DamID enhancer SNP annotation, SBayesRC heritability plotting interface, Dubois TRIAGE workflow, scDRS covariate/cell-ID preparation, cardiac-enhancer BED import and interval handling, TRIAGE1 helper, Ensembl-to-Entrez conversion, qPCR pairing/normalisation section, AlphaMissense heatmap input handling and summary-statistic/PIP utilities. Historical code bodies are preserved where repair would require scientific assumptions that are not present in the supplied material. No tests, syntax checks, re-analysis or execution on the original UQ HPC environment were performed.

@@ -1,0 +1,66 @@
+source_file	size_bytes	decision
+upset_plot 2.pdf	13320	Included in curated repository
+genes_bound_SRF_location.txt	464851	Included in curated repository
+genes_bound_nkx25nowindow_location.txt	388422	Included in curated repository
+mri.sh	891	Reviewed; replaced by documented modular scripts / sanitised HPC template
+unique_tf_bound_genes.RDS	13642	Not copied: opaque workspace/intermediate or bulky spreadsheet; provenance/permissions need separate review
+TF_damid.R	52578	Reviewed; replaced by documented modular scripts / sanitised HPC template
+cm_upregulated_in_fetal_ms.txt	1470	Included in curated repository
+adult_fetal_barplot_percentage.pdf	4959	Included in curated repository
+genes_bound_SRFnowindow_location.txt	464865	Included in curated repository
+sbayesrc.sh	865	Reviewed; replaced by documented modular scripts / sanitised HPC template
+HOPX_bound_genes.txt	26193	Included in curated repository
+humanGenesList.RDS	563274	Not copied: opaque workspace/intermediate or bulky spreadsheet; provenance/permissions need separate review
+.DS_Store	6148	Not copied: system or backup file
+HOPX_bound_genes_location.txt	104775	Included in curated repository
+GO_enrichment_for_tfboundgenes_results.RDS	3095034	Not copied: opaque workspace/intermediate or bulky spreadsheet; provenance/permissions need separate review
+dotplot_tf_binding.pdf	13493	Included in curated repository
+genes_bound_tbx5nowindow_location.txt	1103452	Included in curated repository
+genes_bound_tbx5_location.txt	1103427	Included in curated repository
+1m_snps_no_mef2a.txt	23295679	Not copied: large intermediate SNP or binding matrix
+fetal_vsadult.txt	152019668	Not copied: large intermediate SNP or binding matrix
+genes_bound_gata4_location.txt	318372	Included in curated repository
+genes_bound_mef2a_location.txt	26282	Included in curated repository
+mri2.sh	907	Reviewed; replaced by documented modular scripts / sanitised HPC template
+human_adult_fetal_and_common_genes_with_window.RDS	1381503	Not copied: opaque workspace/intermediate or bulky spreadsheet; provenance/permissions need separate review
+TF_damid_1.R	55631	Reviewed; replaced by documented modular scripts / sanitised HPC template
+sd01.xls	19070464	Not copied: opaque workspace/intermediate or bulky spreadsheet; provenance/permissions need separate review
+hopx_only.txt	14059482	Not copied: large intermediate SNP or binding matrix
+genes_bound_tbx5.txt	406293	Included in curated repository
+7m_nowindow_mri.sh	1003	Reviewed; replaced by documented modular scripts / sanitised HPC template
+cm_foetal_vs_adult_sig_ms.txt	4190	Included in curated repository
+7m_nowindow.sh	994	Reviewed; replaced by documented modular scripts / sanitised HPC template
+genes_bound_gata4nowindow_location.txt	318374	Included in curated repository
+upset_plot.pdf	13338	Included in curated repository
+list_of_fetal_vs_adult_binding_genes_TFs_mouse.RDS	1355481	Not copied: opaque workspace/intermediate or bulky spreadsheet; provenance/permissions need separate review
+genes_bound_gata4.txt	122628	Included in curated repository
+mri 2.sh	916	Reviewed; replaced by documented modular scripts / sanitised HPC template
+tbx3_boogaard_genes_annotated_to_peaks.txt	289353	Not copied: system or backup file
+genes_bound_SRF.txt	173193	Included in curated repository
+list_of_fetal_vs_adult_binding_genes_TFs_humans.RDS	1355481	Not copied: opaque workspace/intermediate or bulky spreadsheet; provenance/permissions need separate review
+update.RData	1209805	Not copied: opaque workspace/intermediate or bulky spreadsheet; provenance/permissions need separate review
+tf_binding_upset.pdf	17382	Included in curated repository
+tf_jaccard_index.pdf	92827	Included in curated repository
+all_binding.txt	54441402	Not copied: large intermediate SNP or binding matrix
+tf_kegg_enrich.pdf	12202	Included in curated repository
+Genetic_correlation.zip	38836276	Not copied: nested archive / separate project
+genes_bound_mef2a.txt	9834	Included in curated repository
+1m_snps_mef2a.txt	25604729	Not copied: large intermediate SNP or binding matrix
+tbx5_only.txt	14059482	Not copied: large intermediate SNP or binding matrix
+upset_plot_7m_snps_nowindow.pdf	13320	Not copied: redundant/secondary historical figure
+unique.RData	1209805	Not copied: opaque workspace/intermediate or bulky spreadsheet; provenance/permissions need separate review
+genes_bound_nkx25.txt	150862	Included in curated repository
+GO_enrichment_for_uniquetfboundgenes_results.RDS	22913	Not copied: opaque workspace/intermediate or bulky spreadsheet; provenance/permissions need separate review
+sbatch.sh	883	Reviewed; replaced by documented modular scripts / sanitised HPC template
+cm_downregulated_in_fetal_ms.txt	2720	Included in curated repository
+tf_bound_genes.RDS	129266	Not copied: opaque workspace/intermediate or bulky spreadsheet; provenance/permissions need separate review
+dalia.sh	888	Reviewed; replaced by documented modular scripts / sanitised HPC template
+genes_bound_nkx25_location.txt	388420	Included in curated repository
+HOPX_bound_genesnowindow_location.txt	104778	Included in curated repository
+update1.RData	154350890	Not copied: opaque workspace/intermediate or bulky spreadsheet; provenance/permissions need separate review
+intersecting_snps_with_50kb_window.pdf	4404	Included in curated repository
+genes_bound_gata4.txt~	122628	Not copied: system or backup file
+genes_bound_mef2anowindow_location.txt	26281	Included in curated repository
+gata_nkx_srf.txt	18677581	Not copied: large intermediate SNP or binding matrix
+1m.sh	844	Reviewed; replaced by documented modular scripts / sanitised HPC template
+nonsig_ms.txt	3080	Included in curated repository

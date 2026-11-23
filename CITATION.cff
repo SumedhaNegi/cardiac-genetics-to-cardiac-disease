@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+message: "Please cite the associated thesis and acknowledge the original data/resource providers."
+title: "Cardiac Genetics to Cardiac Disease — Thesis Methods Repository"
+type: software
+authors:
+  - family-names: Negi
+    given-names: Sumedha
